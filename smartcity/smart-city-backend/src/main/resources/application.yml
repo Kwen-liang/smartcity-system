@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-city-backend
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/smart_city?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+
+# 3. MyBatis-Plus ??
+mybatis-plus:
+  configuration:
+    # ?? SQL ????
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # ?????????? (???????????)
+    map-underscore-to-camel-case: true
